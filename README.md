@@ -6,7 +6,7 @@ An implementation of the deep compression pipeline applied to a VGG-16 neural ne
 
 This was a lab assignment for my course in Software-Hardware Co-design for Intelligent Systems. It explored how to make neural networks small enough to deploy on resource-constrained hardware. Deep compression is a technique that dramatically shrinks a trained model's storage footprint without meaningfully hurting its accuracy. This project implements all three stages of the pipeline from [Han et al. (2015)](https://arxiv.org/abs/1510.00149): removing weak connections, clustering the remaining weights, and compressing the result with entropy coding. Applied to a VGG-16 model on CIFAR-10, the pipeline achieves over **40x compression** while maintaining **90%+ test accuracy**.
 
-## What I Built
+## Implementation
 
 - **Pruning**: Implemented two strategies for removing insignificant weights from the network, one based on a percentage threshold and one based on the distribution of each layer's weights. Pruned weights are masked out and stay zeroed during fine-tuning.
 - **Fine-tuning**: Extended the training loop to enforce the pruning masks during backpropagation, ensuring pruned connections do not recover across training steps.
