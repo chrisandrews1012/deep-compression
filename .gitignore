@@ -1,18 +1,9 @@
-# Model weights
-*.pt
-
-# Numpy outputs
-*.npy
+# Model weights and outputs
+models/*.pt
+models/*.npy
 
 # Dataset
 data/
-
-# Submission folders (contain assignment instructions and large binaries)
-Assignment 1-5 Submission/
-Assignment 6 Submisson/
-
-# Assignment PDFs
-*.pdf
 
 # Python
 __pycache__/
@@ -20,6 +11,7 @@ __pycache__/
 *.pyo
 .env
 venv/
+.venv/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
