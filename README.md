@@ -60,7 +60,12 @@ deep-compression/
 
 **Source**
 
-`vgg16.py` defines the VGG-16 and VGG-16 half-width model architectures. `prune.py` and `pruned_layers.py` implement the pruning logic and custom layer wrappers that enforce binary masks during training. `train_util.py` handles training, fine-tuning and evaluation. `quantize.py` runs k-means per layer. `huffman_coding.py` builds the encoding and computes average bits per weight. `summary.py` reports per-layer sparsity and parameter counts.
+`vgg16.py` defines the VGG-16 and VGG-16 half-width model architectures. 
+`prune.py` and `pruned_layers.py` implement the pruning logic and custom layer wrappers that enforce binary masks during training. 
+`train_util.py` handles training, fine-tuning and evaluation.
+`quantize.py` runs k-means per layer. 
+`huffman_coding.py` builds the encoding and computes average bits per weight. 
+`summary.py` reports per-layer sparsity and parameter counts.
 
 ## Getting Started
 
